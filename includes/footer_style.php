@@ -72,7 +72,7 @@ a:hover{
           <div class="form-group">
             <textarea name="message" placeholder="Votre message" class="form-control" rows="4" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Envoyer</button>
+          <button type="submit" class="btn btn-primary" style="margin-bottom: 20px;">Envoyer</button>
         </form>
       </div>
     </div>

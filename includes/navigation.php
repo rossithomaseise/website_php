@@ -20,12 +20,12 @@
                   <li class="nav-item mx-0 mx-lg-1">
                     <a class="nav-link py-3 px-0 px-lg-3 rounded" href="connexion.php" onmouseover="this.style.color='#0055A4'" onmouseout="this.style.color='white'">Connexion</a>
                   </li>
-                <?php else: ?>
-                  <?php if (isset($_SESSION['LOGGED_USER']) && $_SESSION['LOGGED_USER'] == "admin"): ?>
+                <?php else: ?> 
+                  <?php if (isset($_SESSION['LOGGED_USER']) && $_SESSION['LOGGED_USER'] == "admin" && $_SESSION['LOGGED_USER_MDP'] == "admin"): ?>
                     <li class="nav-item mx-0 mx-lg-1">
                       <a class="nav-link py-3 px-0 px-lg-3 rounded" href="admin.php" onmouseover="this.style.color='#0055A4'" onmouseout="this.style.color='white'">Admin</a>
                     </li>
-                  <?php elseif (isset($_SESSION['LOGGED_USER']) && $_SESSION['LOGGED_USER'] == "superadmin"): ?>
+                  <?php elseif (isset($_SESSION['LOGGED_USER']) && $_SESSION['LOGGED_USER'] == "superadmin" && $_SESSION['LOGGED_USER_MDP'] == "superadmin"): ?>
                     <li class="nav-item mx-0 mx-lg-1">
                       <a class="nav-link py-3 px-0 px-lg-3 rounded" href="super_admin.php" onmouseover="this.style.color='#0055A4'" onmouseout="this.style.color='white'">Super Admin</a>
                     </li>

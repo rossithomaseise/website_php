@@ -201,7 +201,7 @@
                         }
                         @media only screen and (max-width:767px){
                           #accelerometreRadarChart{
-                            padding-top: 2vh;
+                            padding-top: 4vh;
                           }
                         }
                       </style>

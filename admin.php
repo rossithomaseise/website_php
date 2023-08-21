@@ -17,7 +17,7 @@
  -->
 <!-- beautify ignore:start -->
 <?php 
-if (!isset($_SESSION['LOGGED_USER']) || $_POST['Identifiant_login'] != "admin" || $_POST['password_login'] != "admin"){
+if (!isset($_SESSION['LOGGED_USER']) || $_SESSION['LOGGED_USER'] != "admin" || $_SESSION['LOGGED_USER_MDP'] != "admin"){
   // Redirection vers la page d'accès interdit si les identifiants sont incorrects
   header('Location: access_interdit.php');
   exit; // Terminer le script pour éviter toute exécution supplémentaire

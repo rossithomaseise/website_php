@@ -1,13 +1,14 @@
+<?php include('includes/session.php'); ?>
+<!DOCTYPE html>
+
 <?php 
-if (!isset($_SESSION['LOGGED_USER']) || $_POST['Identifiant_login'] != "superadmin" || $_POST['password_login'] != "superadmin"){
+if (!isset($_SESSION['LOGGED_USER']) || $_SESSION['LOGGED_USER'] != "superadmin" || $_SESSION['LOGGED_USER_MDP'] != "superadmin"){
   // Redirection vers la page d'accès interdit si les identifiants sont incorrects
   header('Location: access_interdit.php');
   exit; // Terminer le script pour éviter toute exécution supplémentaire
 }
 ?>
 
-<?php include('includes/session.php'); ?>
-<!DOCTYPE html>
 <!-- https://apexcharts.com/ --> <!-- DOCUMENTATION-->
 <!-- https://apexcharts.com/javascript-chart-demos/mixed-charts/line-column/ documentations sur différents types de charts -->
 <!-- https://apexcharts.com/docs/options/xaxis/# documentation sur options -->

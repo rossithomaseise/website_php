@@ -2774,6 +2774,9 @@ input, select, textarea {
 }
 
 @media only screen and (max-width: 992px) {
+	#texte_intro{
+		margin-top:-1vh;
+	}
     #banner {
 	    position: relative;
 	    top: -52px;
